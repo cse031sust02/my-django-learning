@@ -9,6 +9,7 @@ autopep8 = "*"
 [packages]
 django = "==3.0.3"
 djangorestframework = "==3.11.0"
+sentry-sdk = "==0.14.2"
 
 [requires]
 python_version = "3.7"
