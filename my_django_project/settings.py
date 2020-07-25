@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'debug_toolbar',
     'rest_framework',
     'blog'
 ]
@@ -53,6 +54,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
 ROOT_URLCONF = 'my_django_project.urls'
@@ -124,6 +126,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+# Configuring Internal IPs
+# https://django-debug-toolbar.readthedocs.io/en/latest/installation.html#configuring-internal-ips
+INTERNAL_IPS = [
+    '127.0.0.1'
+]
 
 
 # Sentry SDK
