@@ -11,6 +11,7 @@ django = "==3.0.7"
 djangorestframework = "==3.11.0"
 sentry-sdk = "==0.14.2"
 gunicorn = "*"
+django-debug-toolbar = "*"
 
 [requires]
 python_version = "3.7"
