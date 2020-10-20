@@ -43,7 +43,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'debug_toolbar',
     'rest_framework',
-    'blog.apps.BlogConfig'
+
+    # My Apps
+    'blog.apps.BlogConfig',
+    'accounts.apps.AccountsConfig'
 ]
 
 MIDDLEWARE = [
@@ -130,6 +133,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+# Login/Logut Configuration
+# https://docs.djangoproject.com/en/stable/ref/settings/#login-redirect-url
+
+LOGOUT_REDIRECT_URL = '/accounts/login/'
 
 
 # Configuring Internal IPs
