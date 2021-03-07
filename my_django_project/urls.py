@@ -7,6 +7,7 @@ urlpatterns = [
     path('accounts/', include('accounts.urls')),
     path('blog/', include('blog.urls')),
     path('fbv_demo/', include('fbv_demo.urls')),
+    path('cbv_demo/', include('cbv_demo.urls')),
 ]
 
 if settings.DEBUG:

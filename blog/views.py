@@ -8,7 +8,7 @@ from .serializers import ArticleSerializer
 
 
 @api_view(['GET', 'POST'])
-def artcile_list(request):
+def article_list(request):
     """
     List all articles, or create a new article.
     """
