@@ -87,12 +87,12 @@ WSGI_APPLICATION = 'my_django_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'play_django',
+        'NAME': 'postgres',
         'USER': 'postgres',
-        'PASSWORD': 'docker',
-        'HOST': 'localhost',
+        'PASSWORD': 'postgres',
+        'HOST': 'db',
         'PORT': 5432,
-    },
+    }
 }
 
 
