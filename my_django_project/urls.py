@@ -6,6 +6,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('accounts.urls')),
     path('blog/', include('blog.urls')),
+    path('fbv_demo/', include('fbv_demo.urls')),
 ]
 
 if settings.DEBUG:
