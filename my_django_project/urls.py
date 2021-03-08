@@ -8,6 +8,7 @@ urlpatterns = [
     path('blog/', include('blog.urls')),
     path('fbv_demo/', include('fbv_demo.urls')),
     path('cbv_demo/', include('cbv_demo.urls')),
+    path('misc/', include('misc.urls')),
 ]
 
 if settings.DEBUG:
