@@ -82,3 +82,6 @@ db.sqlite3
 # Visual Studio Code
 .vscode/*
 *.code-workspace
+
+# postgres docker volume
+pgdata/
