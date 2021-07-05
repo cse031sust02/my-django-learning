@@ -1,1 +1,5 @@
-File Upload Demo goes here
+<form action="" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    Select file: <input type="file" id="myfile" name="myfile">
+    <button>Upload</button>
+</form>
