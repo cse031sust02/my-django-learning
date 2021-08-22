@@ -1,7 +1,14 @@
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404, render
 
+from .models import Student
 
-def model_demo(request):
-    context = {}
-    return render(request, 'file_demo/index.html', context)
+
+def student_demo(request, student_id):
+    student = Student.objects.get(id=student_id)
+    student_gadgets = student.gadget_set.all()
+    context = {
+        'student': student,
+        'student_gadgets': student_gadgets
+    }
+    return render(request, 'model_demo/student.html', context)

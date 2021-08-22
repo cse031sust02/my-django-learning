@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'fbv_demo.apps.FbvDemoConfig',
     'cbv_demo.apps.CbvDemoConfig',
     'drf_demo.apps.DrfDemoConfig',
+    'model_demo.apps.ModelDemoConfig',
     'misc.apps.MiscConfig',
 ]
 
@@ -159,11 +160,11 @@ INTERNAL_IPS = [
 
 # Sentry SDK
 # https://sentry.io/for/django/
-sentry_sdk.init(
-    dsn="https://3774f1610922477e8f830654b35a4dc0@sentry.io/4784599",
-    integrations=[DjangoIntegration()],
+# sentry_sdk.init(
+#     dsn="https://3774f1610922477e8f830654b35a4dc0@sentry.io/4784599",
+#     integrations=[DjangoIntegration()],
 
-    # If you wish to associate users to errors (assuming you are using
-    # django.contrib.auth) you may enable sending PII data.
-    send_default_pii=True
-)
+#     # If you wish to associate users to errors (assuming you are using
+#     # django.contrib.auth) you may enable sending PII data.
+#     send_default_pii=True
+# )

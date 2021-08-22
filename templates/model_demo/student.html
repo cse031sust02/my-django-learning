@@ -1,0 +1,12 @@
+<h3> Student : {{ student.name }} </h3>
+
+<h3>Gadgets:</h3>
+{% if student_gadgets %}
+    <ul>
+    {% for gadget in student_gadgets %}
+        <li>{{ gadget.title }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No gadget available.</p>
+{% endif %}
